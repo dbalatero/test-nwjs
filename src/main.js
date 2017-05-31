@@ -4,12 +4,15 @@
  * @see http://developer.chrome.com/apps/app.runtime.html
  * @see http://developer.chrome.com/apps/app.window.html
  */
+
 chrome.app.runtime.onLaunched.addListener(function() {
   // Center window on screen.
   var screenWidth = screen.availWidth;
   var screenHeight = screen.availHeight;
   var width = 500;
   var height = 300;
+
+  console.log(nw);
 
   chrome.app.window.create('index.html', {
     id: "helloWorldID",
